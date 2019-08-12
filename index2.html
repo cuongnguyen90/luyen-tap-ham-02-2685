@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+<label>Tinh Chu Vi</label>
+<input type="number" name="" id="bankinh">
+<input type="button" onclick="C(document.getElementById('bankinh').value)" value="GET">
+<hr>
+<label>Tinh Dien Tich</label>
+<input type="number" name="" id="ban_kinh">
+<input type="button" onclick="S(document.getElementById('ban_kinh').value)" value="GET">
+
+<div id="result">
+
+</div>
+<script>
+
+    function C( a) {
+        c = 2*3.14*a;
+
+        document.getElementById('result').innerText = c
+    }
+    function S( a) {
+        s = Math.pow(a,2)*3.14;
+
+        document.getElementById('result').innerText = s
+    }
+</script>
+</body>
+</html>
